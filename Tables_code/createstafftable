@@ -1,0 +1,5 @@
+CREATE TABLE "Staff" (
+	"staff_id" VARCHAR(20) NOT NULL,
+	"name" VARCHAR(40) NOT NULL,
+	PRIMARY KEY	( staff_id )
+);

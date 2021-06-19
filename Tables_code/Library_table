@@ -1,0 +1,8 @@
+CREATE TABLE "Library" (
+	"accessinno"	INTEGER NOT NULL,
+	"isbn"	INTEGER NOT NULL,
+	"userid"	VARCHAR(20) DEFAULT "nobody",
+	FOREIGN KEY("isbn") REFERENCES "Book"("isbn") ON UPDATE SET NULL ON DELETE SET NULL,
+	FOREIGN KEY("userid") REFERENCES "Student"("userid") ON UPDATE SET NULL ON DELETE SET NULL,
+	PRIMARY KEY("accessinno")
+);
